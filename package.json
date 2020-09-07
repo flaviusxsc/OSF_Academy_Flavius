@@ -1,0 +1,23 @@
+{
+  "name": "osf-academy-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flaviusxsc/OSF_Academy_Flavius.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/flaviusxsc/OSF_Academy_Flavius/issues"
+  },
+  "homepage": "https://github.com/flaviusxsc/OSF_Academy_Flavius#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
