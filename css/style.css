@@ -1,3 +1,5 @@
+/* ----------------Colors ----------------------*/
+/* ----------------Fonts ----------------------*/
 /* ----------------RESET CSS ----------------------*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -46,11 +48,64 @@ body {
   width: 71.42857%; }
 
 h1 {
-  font-size: 24px; }
+  font-size: 24px;
+  font-family: "Lato", sans-serif; }
 
-/* ----------------General Styles ----------------------*/
+/* ----------------GENERAL STYLES----------------------*/
 body {
-  width: 20px; }
+  font-family: "Lato", sans-serif;
+  width: 100%; }
 
-h1 {
-  font-size: 70px; }
+/* ----------------COMPONENTS----------------------*/
+.main-nav {
+  padding: 0; }
+  .main-nav .navbar-toggler.toggler-example {
+    cursor: pointer; }
+
+.navbar-collapse {
+  background-color: #262a32;
+  width: 100%; }
+
+.fa-1x {
+  font-size: 1.5rem; }
+
+.nav-link {
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+  height: 40px;
+  margin-left: 16px; }
+
+.dropdown-menu {
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background-color: #262a32;
+  width: 100%; }
+  .dropdown-menu .dropdown-item {
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    color: #ffffff !important;
+    background-color: #262a32;
+    width: 100%;
+    border: 0;
+    margin: 0; }
+
+.dropdown-toggle::after {
+  float: right;
+  margin-right: 5px;
+  margin-top: 3px; }
+
+.submenus::after {
+  float: none; }
+
+.navbar .dropdown-menu a:not(.active) {
+  color: #ffffff; }
+
+.navbar .dropdown-menu {
+  position: relative !important; }
+
+/* ====================================================
+  MEDIA QUERIES
+  ======================================================= */
