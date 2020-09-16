@@ -271,6 +271,67 @@ body {
   .knowledge img {
     padding-right: 50px; }
 
+/* -------------------FOOTER-------------------------*/
+.footer-content {
+  background-color: #ffffff;
+  color: #686562;
+  min-height: 300px;
+  width: 90%;
+  margin: 20px auto; }
+  .footer-content .footer-content-year {
+    font-size: 18px;
+    font-family: "Lato", sans-serif; }
+  .footer-content .footer-content-contact button,
+  .footer-content .footer-content-categories button,
+  .footer-content .footer-content-about button {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    border: none;
+    width: 100%;
+    text-align: left;
+    color: #333333;
+    box-shadow: none;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 5px 0 3px 0; }
+  .footer-content .footer-content-contact .dropdown-menu,
+  .footer-content .footer-content-categories .dropdown-menu,
+  .footer-content .footer-content-about .dropdown-menu {
+    background-color: #ffffff; }
+  .footer-content .footer-content-contact a,
+  .footer-content .footer-content-categories a,
+  .footer-content .footer-content-about a {
+    background-color: #ffffff;
+    color: #686562 !important;
+    margin: 10px 0;
+    border: none;
+    font-size: 18px; }
+  .footer-content .footer-content-social-links {
+    text-align: center;
+    margin-top: 20px; }
+    .footer-content .footer-content-social-links a {
+      margin: 15px; }
+    .footer-content .footer-content-social-links i {
+      color: #b2b2b2;
+      font-size: 25px; }
+
+.footer-bottom {
+  background-color: #262a32;
+  min-height: 70px;
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 999; }
+
+i {
+  font-size: 40px;
+  color: #b2b2b2;
+  margin: 15px; }
+
 /* ====================================================
   MEDIA QUERIES
   ======================================================= */
