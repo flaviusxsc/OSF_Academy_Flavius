@@ -73,10 +73,14 @@ body {
 .navbar {
   padding-left:0;
   padding-right:0;
+  .navbar-brand {
+    height:54px;
+  }
 }
 
 .abs-center-x {
   position: absolute;
+  top:0;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -163,6 +167,10 @@ width:100%;
   }
 }
 /* ----Product Section-------------*/
+.carousel-inner {
+  margin-right:0;
+  margin-left:0;
+}
 
 .products-section {
   width:100%;
@@ -420,8 +428,13 @@ width:100%;
   .feature-image{
     display:none;
   }
+  .navbar {
+    box-shadow:none;
+  }
   .navbar-collapse {
     background-color: #ffffff;
+    display:flex;
+    justify-content: space-between;
     
   }
   .navbar-nav {
@@ -466,7 +479,10 @@ width:100%;
      width:90%;
      margin:0 auto;
    }
-  /* ------------ /NAVBAR------------------*/
+  /* ------------ /NAVBAR------------------*/ 
+
+   /* ------------CAROUSEL------------------*/
+
   .carousel{
    margin-right: 20px;
   }
@@ -530,8 +546,33 @@ width:100%;
     line-height:50px;
   } 
 }
+/* ------------/*CAROUSEL------------------*/
+
+/* ------------Benefits Section------------------*/
+.benefits-content-section {
+  display:flex;
+  min-height:198px;
+}
+.method {
+  flex-direction:row;
+}
+/* ------------Banner------------------*/
+.banner-section img {
+ height:445px;
+}
+.banner-section h1 {
+  font-size:52px;
+  top:30%;
+  text-align: center;
+}
+.banner-section p {
+  top:50%;
+  left:500px;
+  
 }
 
+}
+  
  @media (max-width:768px) {
 
     /* ------------NAVBAR------------------*/
