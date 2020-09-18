@@ -317,6 +317,35 @@ i {
   margin: 15px; }
 
 /* ====================================================
+  Modal
+  ======================================================= */
+.modal-content {
+  border-radius: 7px !important;
+  background-color: #ffffff; }
+  .modal-content .modal-header {
+    color: #45413e;
+    font-family: "Lato", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    border-bottom: none; }
+
+.md-form input {
+  border: 1px solid #ced4da !important;
+  border-radius: 18px !important; }
+
+.modal-footer {
+  border-top: none; }
+  .modal-footer button {
+    width: 181px;
+    border: 2px solid #84bc22;
+    background-color: #84bc22 !important;
+    border-radius: 30px;
+    margin-bottom: 60px; }
+
+.modal-dialog {
+  margin: 20vh auto 0px auto; }
+
+/* ====================================================
   MEDIA QUERIES
   ======================================================= */
 @media (min-width: 1281px) {
@@ -424,4 +453,7 @@ i {
     display: none; }
   /* ------------ /NAVBAR------------------*/
   .summer-sales {
-    display: none; } }
+    display: none; }
+  /* ------------ Modal------------------*/
+  .modal-dialog {
+    width: 320px; } }

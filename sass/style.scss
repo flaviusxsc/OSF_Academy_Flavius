@@ -373,6 +373,39 @@ width:100%;
     margin:15px;
 }
 
+  /* ====================================================
+  Modal
+  ======================================================= */
+
+  .modal-content {
+    border-radius:7px !important;
+    background-color: #ffffff;
+    .modal-header{
+      color: #45413e;
+      font-family:$font-primary;
+      font-size: 30px;
+      font-weight: 700; 
+      border-bottom:none;  
+      
+    }
+  }
+  .md-form input {
+    border:1px solid #ced4da !important;
+    border-radius:18px !important;
+  } 
+  .modal-footer {
+    border-top:none;
+    button {
+      width: 181px;
+      border: 2px solid #84bc22;
+      background-color: #84bc22 !important;
+      border-radius:30px; 
+      margin-bottom: 60px;
+    }
+  }
+  .modal-dialog {
+    margin: 20vh auto 0px auto;
+}
 
   /* ====================================================
   MEDIA QUERIES
@@ -517,5 +550,9 @@ width:100%;
      /* ------------ /NAVBAR------------------*/
       .summer-sales {
        display:none;
+      }
+      /* ------------ Modal------------------*/
+      .modal-dialog {
+        width:320px;
       }
    }
