@@ -1,19 +1,87 @@
 /* ----------------Colors ----------------------*/
 /* ----------------Fonts ----------------------*/
 /* ----------------RESET CSS ----------------------*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -22,22 +90,35 @@ time, mark, audio, video {
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block; }
 
 body {
   line-height: 1; }
 
-ol, ul {
+ol,
+ul {
   list-style: none; }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none; }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
   content: none; }
 
 table {
@@ -360,11 +441,12 @@ i {
 
 .container-404 {
   width: 90%;
-  margin: 30px auto; }
+  margin: 0 auto; }
 
 .header-404 {
   text-align: center;
-  margin-bottom: 100px; }
+  margin-bottom: 50px;
+  padding-top: 50px; }
   .header-404 :first-child {
     color: #84bc22;
     font-family: "Lato", sans-serif; }
@@ -381,13 +463,14 @@ i {
 .body-404 {
   width: 100%;
   height: 492px;
+  padding: 50px;
   background-color: #ffffff; }
   .body-404 img {
     position: absolute; }
 
 .text-error {
   text-align: right;
-  width: 50%;
+  width: 62%;
   float: right;
   text-align: left; }
   .text-error p {
@@ -400,8 +483,10 @@ i {
 .search-bottom form input {
   font-size: 20px !important;
   position: relative; }
-  .search-bottom form input .fa-search {
-    position: absolute; }
+
+.search-404 {
+  position: absolute;
+  left: 90%; }
 
 .oops-text {
   color: #84bc22;
@@ -410,7 +495,8 @@ i {
   left: 10%; }
 
 .page-404 {
-  background-color: #f1edea; }
+  background-color: #f1edea;
+  padding-bottom: 80px; }
 
 /* ====================================================
   MEDIA QUERIES
@@ -542,13 +628,15 @@ i {
       margin-right: 0; }
   .footer-content-contact,
   .footer-content-categories,
-  .footer-content-about, .no-expand-menu {
+  .footer-content-about,
+  .no-expand-menu {
     position: static;
     display: inline;
     border: none; }
     .footer-content-contact .dropdown-item,
     .footer-content-categories .dropdown-item,
-    .footer-content-about .dropdown-item, .no-expand-menu .dropdown-item {
+    .footer-content-about .dropdown-item,
+    .no-expand-menu .dropdown-item {
       padding: 10px 0; }
   .footer-content-categories .no-expand-menu {
     height: 400px;
@@ -558,6 +646,8 @@ i {
 
 @media (max-width: 768px) {
   /* ------------NAVBAR------------------*/
+  #popular-items-desktop {
+    display: none; }
   .logo-text {
     visibility: hidden; }
   .nav-item a {
@@ -580,6 +670,19 @@ i {
   .body-404 {
     width: 100%;
     margin: 0 auto;
-    background-color: #ffff; }
+    background-color: #ffff;
+    padding: 0; }
     .body-404 img {
-      display: none; } }
+      display: none; }
+  .oops-text {
+    position: static;
+    font-size: 70px;
+    margin-left: 70px; }
+  .text-error {
+    float: none;
+    margin: 20px auto;
+    width: 90%; }
+    .text-error p:nth-of-type(1) {
+      display: none; }
+  .search-404 {
+    display: none; } }
