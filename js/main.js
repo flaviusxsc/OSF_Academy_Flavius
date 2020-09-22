@@ -5,4 +5,3 @@ document.getElementById("year").innerHTML = date.getFullYear();
 
 
 
-
