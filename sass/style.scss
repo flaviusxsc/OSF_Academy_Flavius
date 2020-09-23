@@ -441,7 +441,6 @@ body {
 }
 .feature-products-image{
   width: 100% !important;
-  height: 190px !important;
 }
 .feature-carousel-item {
   margin-bottom: 64px;
@@ -580,6 +579,10 @@ i {
 .modal-content {
   border-radius: 7px !important;
   background-color: #ffffff;
+  max-height:467px;
+  .modal-body {
+    padding-bottom: 0;
+  }
   .modal-header {
     color: #45413e;
     font-family: $font-primary;
@@ -599,13 +602,77 @@ i {
     border: 2px solid #84bc22;
     background-color: #84bc22 !important;
     border-radius: 30px;
-    margin-bottom: 60px;
   }
 }
 .modal-dialog {
   margin: 20vh auto 0px auto;
 }
-
+.no-account {
+  text-align:center;
+  margin-bottom:100px;
+  a {
+    color:#84bc22 !important;
+    
+  }
+}
+.eye-icon{
+position:absolute;
+right:0;
+top:0;
+}
+/* ====================================================
+  Cookies Banner
+  ======================================================= */
+  .cookie-container {
+    width: 1170px;
+    height: 148px;
+    position:fixed;
+    bottom:-100%;
+    left:0;
+    right:0;
+    background-color:#ffffff;
+    padding:0 32px;
+    transition:400ms;
+    z-index:999;
+    margin:0 auto;
+    border-radius: 7px;
+    p{
+      color: #45413e;
+      font-family:$font-primary;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 24px;
+      width: 828px;
+      height: 60px;
+    }
+    h2 {
+      color: #84bc22;
+      font-family: $font-primary;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 24px;
+      margin-top:28px;
+    }
+    a {
+      color: #84bc22 ;
+    }
+    .cookie-btn {
+      background-color: #84bc22 ;
+      color:#ffffff;
+      border:none;
+      border-radius: 20px;
+      text-transform:uppercase;
+      padding:8px 35px;
+      font-size:14px;
+      float:right;
+      margin-bottom:17px;
+      cursor:pointer;
+      
+    }
+  }
+  .cookie-container.active {
+    bottom:20%;
+  }
 /* ====================================================
   404 PAGE
   ======================================================= */
@@ -981,5 +1048,8 @@ i {
       height: 450px;
       width:100%;
     }
+  }
+  .cookie-container {
+    display:none;
   }
 }
