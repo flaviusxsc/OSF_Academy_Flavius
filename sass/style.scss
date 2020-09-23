@@ -215,15 +215,15 @@ body {
 /* ----Slider Section----*/
 .slider-section {
   position: relative;
-  width: 90%;
+  width: 80%;
   margin: 22px auto;
 }
 
 .carousel-item {
   position: relative;
-  img {
-    height: 450px;
-  }
+  // img {
+  //   height: 450px;
+  // }
 }
 .text-image {
   position: absolute;
@@ -265,7 +265,7 @@ body {
   height: 580px;
   .wrapper {
     position: relative;
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
   }
   hr {
@@ -300,6 +300,73 @@ body {
   img {
     height: auto;
   }
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  transition: .5s ease;
+  background-image: linear-gradient(to top, #1cc167 0%, #2ed3a2 100%);
+  opacity: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  .heart {
+    z-index:2;
+    // margin-left:21px;
+    background-color: #ffffff;
+    border-radius:50%;
+    font-size:20px;
+    .fa-heart{
+      font-size: 40px;
+      padding: 20px;
+      color:#e73c68;
+    }
+  }
+  .plus {
+    z-index:2;
+    background-color: #ffffff;
+    border-radius:50%;
+    .fa-plus {
+      font-size: 40px;
+      padding:20px;
+      color:#23c46e;
+      
+    }
+  }
+}
+.shopping-cart-number {
+  position: absolute;
+  font-size: 12px;
+  background-color:white ;
+  border: 1px solid #84bc22;
+  border-radius: 50%;
+  color:#84bc22;
+  padding:3px;
+  right:0;
+  z-index: 10;
+  margin-top:8px;
+  margin-right: 5px;
+}
+.heart-cart-number {
+  position: absolute;
+  font-size: 12px;
+  background-color:white ;
+  border: 1px solid #84bc22;
+  border-radius: 50%;
+  color:#84bc22;
+  padding:3px;
+  right:0;
+  z-index: 10;
+  margin-top:8px;
+  margin-right: 5px;
+}
+.card:hover .overlay {
+  opacity: 0.9;
 }
 .card {
   padding: 20px;
@@ -695,13 +762,16 @@ i {
   .footer-bottom {
     display: none;
   }
+  .nav-extra a {
+    position:relative;
+  }
   .nav-extra a i {
     font-size: 20px;
     color: #45413e;
     opacity: 0.5;
   }
   .center-nav {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
   }
   /* ------------ /NAVBAR------------------*/
@@ -733,6 +803,9 @@ i {
       top: 15%;
     }
   }
+  .summer-sales {
+    height:505px;
+  }
   .summer-sales-text {
     color: #ffffff;
     font-family: $font-primary;
@@ -748,14 +821,20 @@ i {
   .summer-sales .follow-f {
     color: #45413e;
     font-family: $font-primary;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
+    line-height:18px;
   }
   .summer-sales button {
     border-radius: 15px;
+    margin-top: 20px;
   }
   .summer-text {
     text-align: center;
+    margin-top:20px;
+    p {
+      padding-top: 20px;
+    }
   }
   .text-image {
     min-height: 400px;
@@ -896,4 +975,11 @@ i {
    .feature-products {
      display:none;
    }
+   .carousel-item-mobile {
+     position:relative;
+    img {
+      height: 450px;
+      width:100%;
+    }
+  }
 }
