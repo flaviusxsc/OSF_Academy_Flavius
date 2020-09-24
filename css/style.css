@@ -897,7 +897,8 @@ i {
               CATEGORY LANDING PAGE
   ======================================================= */
 .category-container {
-  background-color: #f2edea; }
+  background-color: #f2edea;
+  padding-bottom: 15px; }
   .category-container .title-link {
     text-align: center;
     padding-top: 24px; }
@@ -946,14 +947,17 @@ i {
     width: 90%;
     margin: 23px auto; }
     .category-container .filters .align-center {
-      text-align: center;
-      padding-top: 14px; }
+      width: 80%;
+      margin: 0 auto;
+      padding-top: 14px;
+      padding-bottom: 17px;
+      display: flex;
+      justify-content: space-between; }
   .category-container label {
     color: #45413e;
     font-family: "Lato", sans-serif;
     font-size: 14px;
     line-height: 24px;
-    margin-right: 30px;
     font-weight: 400; }
   .category-container select {
     width: 198px;
@@ -961,3 +965,22 @@ i {
     border: 2px solid #45413e;
     opacity: 0.5;
     border-radius: 25px; }
+  .category-container .results {
+    text-align: center;
+    padding-bottom: 22px; }
+    .category-container .results p {
+      color: #45413e;
+      font-family: "Lato", sans-serif;
+      font-size: 14px; }
+    .category-container .results span {
+      font-size: 16px; }
+  .category-container .product-cards-section {
+    width: 90%;
+    margin: 22px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 29px; }
+    .category-container .product-cards-section .card {
+      padding: 0; }
+    .category-container .product-cards-section .card .card-body span {
+      display: block; }
