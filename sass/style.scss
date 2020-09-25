@@ -862,6 +862,28 @@ top:0;
         display:block;
       }
     }
+    .color {
+      .circle {
+        width:14px;
+        height:14px;
+        border-radius:50%;
+      }
+      .white {
+        border: 3px solid #45413e;
+        background-color: #ffffff;
+        
+      }
+      .blue {
+        background-color: #43c0cf;
+      }
+      .violete {
+        background-color: #315bbd;
+      }
+      .gray {
+        background-color: #efead7;
+      }
+
+    }
   }
 
 /* ====================================================
@@ -1095,7 +1117,7 @@ top:0;
 /* ====================================================
               CATEGORY LANDING PAGE
   ======================================================= */
-  .title-category {
+  .title-category h1 {
     font-size: 48px;
   }
   .category-container .filters {
@@ -1110,7 +1132,40 @@ top:0;
       justify-content: space-around;
     }
 
-    
+  }  
+  .category-container .title-category h1:before {
+    width:500px;
+  }
+  .category-container .title-category h1:after {
+    width:500px;
+  }
+  .product-cards-section {
+    flex-direction: row!important;
+    flex-wrap:wrap;
+    width:1169px !important;
+    .card .card-img-top {
+      width: 270px;
+      height: 260px;
+    }
+    .card-body{
+      width: 270px;
+      height: 105px;
+    }
+  } 
+  #load-more-btn {
+    padding:15px 40px;
+    border: 2px solid #d9d9d9;
+    background-color: $color-text-green;
+    color: #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 60px;
+    margin: 120px auto 77px auto ;
+  }
+  .more-cards{
+    width:1169px;
+
+  }
     
 }
 
@@ -1190,6 +1245,5 @@ top:0;
   .cookie-container {
     display:none;
   }
-}
 
 }

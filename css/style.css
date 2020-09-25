@@ -745,6 +745,19 @@ i {
       padding: 0; }
     .category-container .product-cards-section .card .card-body span {
       display: block; }
+  .category-container .color .circle {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%; }
+  .category-container .color .white {
+    border: 3px solid #45413e;
+    background-color: #ffffff; }
+  .category-container .color .blue {
+    background-color: #43c0cf; }
+  .category-container .color .violete {
+    background-color: #315bbd; }
+  .category-container .color .gray {
+    background-color: #efead7; }
 
 /* ====================================================
   MEDIA QUERIES
@@ -931,7 +944,7 @@ i {
   /* ====================================================
               CATEGORY LANDING PAGE
   ======================================================= */
-  .title-category {
+  .title-category h1 {
     font-size: 48px; }
   .category-container .filters {
     width: 1169px;
@@ -942,9 +955,34 @@ i {
     margin-top: 20px; }
     .category-container .filters .align-center {
       padding-top: 24px;
-      justify-content: space-around; } }
+      justify-content: space-around; }
+  .category-container .title-category h1:before {
+    width: 500px; }
+  .category-container .title-category h1:after {
+    width: 500px; }
+  .product-cards-section {
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    width: 1169px !important; }
+    .product-cards-section .card .card-img-top {
+      width: 270px;
+      height: 260px; }
+    .product-cards-section .card-body {
+      width: 270px;
+      height: 105px; }
+  #load-more-btn {
+    padding: 15px 40px;
+    border: 2px solid #d9d9d9;
+    background-color: #84bc22;
+    color: #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 60px;
+    margin: 120px auto 77px auto; }
+  .more-cards {
+    width: 1169px; } }
 
-@media (min-width: 1281px) and (max-width: 768px) {
+@media (max-width: 768px) {
   /* ------------NAVBAR------------------*/
   #popular-items-desktop {
     display: none; }
