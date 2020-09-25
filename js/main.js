@@ -41,3 +41,15 @@ setTimeout( () =>{
   if(!localStorage.getItem("cookieBannerDisplayed"))
   cookieContainer.classList.add("active")
 }, 2000)
+
+// Shopping increment by Buy Button
+let addspecial = document.getElementById('special-button-2');
+
+let intcart = document.getElementById('number-bag');
+
+let integerspecial = 0;
+
+addspecial.addEventListener ('click', function(){
+integerspecial += 1;
+intcart.innerHTML = integerspecial;
+}) ;
