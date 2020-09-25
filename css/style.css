@@ -419,6 +419,12 @@ body {
 .feature-products-controls {
   text-align: center;
   margin-bottom: 37px; }
+  .feature-products-controls span {
+    font-size: 50px; }
+  .feature-products-controls a .fa-chevron-left {
+    margin-right: 241px; }
+  .feature-products-controls a .fa-chevron-right {
+    margin-left: 241px; }
 
 .feature-products-image {
   width: 100% !important; }
@@ -500,6 +506,10 @@ body {
     padding-left: 0;
     padding-right: 0;
     margin: 5px 0 3px 0; }
+  .footer-content .footer-content-contact .dropdown-toggle::after,
+  .footer-content .footer-content-categories .dropdown-toggle::after,
+  .footer-content .footer-content-about .dropdown-toggle::after {
+    display: none !important; }
   .footer-content .footer-content-contact .dropdown-menu,
   .footer-content .footer-content-categories .dropdown-menu,
   .footer-content .footer-content-about .dropdown-menu {
