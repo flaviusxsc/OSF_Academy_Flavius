@@ -916,6 +916,9 @@ i {
   border: 2px solid #d9d9d9 !important;
   margin-top: 80px; }
 
+#more {
+  display: none; }
+
 /* ====================================================
   MEDIA QUERIES
   ======================================================= */
@@ -929,7 +932,7 @@ i {
     .products-desktop .row .card .card-body {
       text-align: center; }
   .products-section {
-    min-height: 1400px; }
+    min-height: 1600px; }
     .products-section h1 {
       font-size: 32px; }
   .btn-load-more {
@@ -1210,3 +1213,260 @@ i {
       width: 100%; }
   .cookie-container {
     display: none; } }
+
+@media (min-device-width: 769px) and (max-device-width: 1279px) {
+  /* ------------NAVBAR------------------*/
+  .abs-center-x {
+    position: static;
+    transform: none; }
+  .feature-image {
+    display: none; }
+  .navbar {
+    box-shadow: none; }
+  .navbar-collapse {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between; }
+  .navbar-nav {
+    margin-left: 20px; }
+  .nav-item a {
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: "Lato", sans-serif; }
+  .nav-item {
+    padding: 0 10px; }
+  #language {
+    color: #45413e;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    border: none; }
+  #currency {
+    color: #45413e;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    border: none; }
+  .footer-bottom {
+    display: none; }
+  .nav-extra a {
+    position: relative; }
+  .nav-extra a i {
+    font-size: 20px;
+    color: #45413e;
+    opacity: 0.5; }
+  .center-nav {
+    width: 93%;
+    margin: 0 auto; }
+  /* ------------ /NAVBAR------------------*/
+  /* ------------CAROUSEL------------------*/
+  #carousel-example-2z {
+    display: none; }
+  .products-desktop .row .card {
+    padding: 0 0 20px 0;
+    margin: 40px auto; }
+    .products-desktop .row .card .card-body {
+      text-align: center; }
+  .btn-load-more {
+    display: block;
+    margin: 0 auto;
+    width: 380px;
+    border: 1px solid white;
+    border-radius: 30px;
+    color: #ffffff;
+    font-size: 18px !important;
+    font-weight: 700;
+    font-family: "Lato", sans-serif; }
+    .btn-load-more:hover {
+      background-color: white; }
+  .carousel {
+    margin-right: 20px;
+    width: 100%; }
+  .carousel-indicators {
+    bottom: 5%; }
+  .green-card {
+    width: 270px;
+    height: 335px;
+    background-color: #84bc22;
+    position: relative; }
+    .green-card img {
+      position: absolute;
+      left: 0;
+      bottom: 0; }
+    .green-card .discount-percent {
+      color: #ffffff;
+      font-family: "Lato", sans-serif;
+      font-size: 100px;
+      font-weight: 700;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 0);
+      top: 15%; }
+  p {
+    padding-top: 20px; }
+  .text-image {
+    min-height: 400px;
+    padding-right: 280px; }
+    .text-image h1 {
+      font-family: "PT Sans", sans-serif;
+      font-size: 40px;
+      font-weight: 700;
+      text-align: left;
+      padding-right: 120px;
+      padding-left: 43px;
+      padding-top: 43px;
+      line-height: 42px; }
+  .summer-sales {
+    display: none; }
+  /* ------------/*CAROUSEL------------------*/
+  /* ------------Popular Items------------------*/
+  .products-section {
+    min-height: 1200px; }
+    .products-section h1 {
+      font-size: 32px; }
+  .products-desktop .card-columns .card:last-child {
+    display: none; }
+  .products-desktop .card-special {
+    display: none; }
+  /* ------------Benefits Section------------------*/
+  .benefits-content-section {
+    display: flex;
+    min-height: 198px; }
+    .benefits-content-section .text-content {
+      margin-top: 25px; }
+  .method {
+    flex-direction: row; }
+    .method img {
+      padding: 29px 20px; }
+  /* ------------Banner------------------*/
+  .banner-section img {
+    height: 380px; }
+  .banner-section h1 {
+    font-size: 52px;
+    top: 30%;
+    text-align: center; }
+  .banner-section p {
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  /* ----------------Footer-----------------------*/
+  .footer-content {
+    height: 227px;
+    justify-content: center !important; }
+    .footer-content .footer-content-categories {
+      width: 250px; }
+    .footer-content .footer-content-social-links {
+      margin-top: 0; }
+      .footer-content .footer-content-social-links a {
+        margin: 0; }
+    .footer-content .footer-content-about {
+      width: 100px;
+      margin-right: 0; }
+  .footer-content-contact,
+  .footer-content-categories,
+  .footer-content-about,
+  .no-expand-menu {
+    position: static;
+    display: inline;
+    border: none; }
+    .footer-content-contact .dropdown-item,
+    .footer-content-categories .dropdown-item,
+    .footer-content-about .dropdown-item,
+    .no-expand-menu .dropdown-item {
+      padding: 10px 0; }
+  .footer-content-categories .no-expand-menu {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; }
+    .footer-content-categories .no-expand-menu .dropdown-item:nth-child(1) {
+      display: none; }
+    .footer-content-categories .no-expand-menu .dropdown-item:nth-child(2) {
+      display: none; }
+    .footer-content-categories .no-expand-menu .dropdown-item:nth-child(3) {
+      display: none; }
+    .footer-content-categories .no-expand-menu .dropdown-item:nth-child(4) {
+      display: none; }
+    .footer-content-categories .no-expand-menu .dropdown-item:nth-child(5) {
+      display: none; }
+    .footer-content-categories .no-expand-menu .dropdown-item:nth-child(6) {
+      display: none; }
+    .footer-content-categories .no-expand-menu .dropdown-item:nth-child(7) {
+      display: none; }
+    .footer-content-categories .no-expand-menu .dropdown-item:nth-child(8) {
+      display: none; }
+    .footer-content-categories .no-expand-menu .dropdown-item:nth-child(9) {
+      display: none; }
+    .footer-content-categories .no-expand-menu .dropdown-item:nth-child(10) {
+      display: none; }
+  /* ------------------------------------FEATURE PRODUCTS------------------*/
+  .carousel-item-next, .carousel-item-prev, .carousel-item.active {
+    display: flex; }
+  /* ====================================================
+                   404 PAGE
+======================================================= */
+  .text-error {
+    width: 53%; }
+  .body-404 {
+    padding: 15px; }
+  .search-404 {
+    left: 83%; }
+  /* ====================================================
+           CATEGORY LANDING PAGE
+======================================================= */
+  .title-category h1 {
+    font-size: 48px; }
+  .category-container .filters {
+    width: 1020px;
+    height: 165px;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 50% 50%;
+    margin-top: 20px; }
+    .category-container .filters .align-center {
+      padding-top: 24px;
+      justify-content: space-around; }
+  .category-container .title-category h1:before {
+    width: 250px; }
+  .category-container .title-category h1:after {
+    width: 250px; }
+  .product-cards-section {
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    width: 1169px !important; }
+    .product-cards-section .card .card-img-top {
+      width: 270px;
+      height: 260px; }
+    .product-cards-section .card-body {
+      width: 270px;
+      height: 105px;
+      padding: 4px; }
+  #special-button-1 {
+    border-radius: 50px 0 0 50px;
+    border: 2px solid #7f7f7f;
+    margin-right: 0;
+    color: #84bc22;
+    box-shadow: none;
+    font-size: 16px;
+    padding: 7px; }
+  #special-button-2 {
+    border-radius: 0 50px 50px 0;
+    border: 2px solid #7f7f7f;
+    box-shadow: none;
+    font-size: 16px;
+    padding: 7px; }
+  #load-more-btn {
+    padding: 15px 40px;
+    border: 2px solid #d9d9d9;
+    background-color: #84bc22;
+    color: #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 60px;
+    margin: 120px auto 77px auto; }
+  .more-cards {
+    width: 1169px; }
+  .category-container .product-cards-section {
+    width: 85% !important; } }

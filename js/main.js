@@ -29,18 +29,18 @@ intheart.innerHTML = integerheart;
 }) 
 // Cookie Policy 
 
-const cookieContainer = document.querySelector(".cookie-container");
-const cookieButton = document.querySelector(".cookie-btn");
+// const cookieContainer = document.querySelector(".cookie-container");
+// const cookieButton = document.querySelector(".cookie-btn");
 
-cookieButton.addEventListener("click",() => {
-  cookieContainer.classList.remove("active");
-  localStorage.setItem("cookieBannerDisplayed","true")
-});
+// cookieButton.addEventListener("click",() => {
+//   cookieContainer.classList.remove("active");
+//   localStorage.setItem("cookieBannerDisplayed","true")
+// });
 
-setTimeout( () =>{
-  if(!localStorage.getItem("cookieBannerDisplayed"))
-  cookieContainer.classList.add("active")
-}, 2000)
+// setTimeout( () =>{
+//   if(!localStorage.getItem("cookieBannerDisplayed"))
+//   cookieContainer.classList.add("active")
+// }, 2000)
 
 // Shopping increment by Buy Button
 let addspecial = document.getElementById('special-button-2');
@@ -60,8 +60,8 @@ intcart.innerHTML = integerspecial;
  let activeImages = document.getElementsByClassName('active');
 
  for (var i=0; i < thumbnails.length; i++) {
-   
-   thumbnails[i].addEventListener('mouseover', function(){
+  
+   thumbnails[i].addEventListener('click', function(){
 
      if (activeImages.length > 0) {
          activeImages[0].classList.remove('active')
@@ -88,4 +88,9 @@ intcart.innerHTML = integerspecial;
     btnText.innerHTML = "Read less";
     moreText.style.display = "inline";
   }
+}
+// Function show password 
+
+function showPassword() {
+  $("#defaultForm-pass").attr("type","");
 }
