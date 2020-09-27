@@ -641,9 +641,21 @@ i {
 .modal-content {
   border-radius: 7px !important;
   background-color: #ffffff;
-  max-height:467px;
+  max-height:530px;
   .modal-body {
     padding-bottom: 0;
+    #defaultForm-pass {
+      font-size: 24px;
+      position: relative;
+    }
+    #defaultForm-email {
+      font-size: 24px;
+    }
+    .forgot-password {
+      color:$color-text-green;
+      float:right;
+      margin-bottom: 15px;
+    }
   }
   .modal-header {
     color: #45413e;
@@ -680,7 +692,8 @@ i {
 .eye-icon{
 position:absolute;
 right:0;
-top:0;
+top:50%;
+transform: translate(-50%,-50%);
 }
 /* ====================================================
   Cookies Banner
@@ -1083,6 +1096,56 @@ top:0;
   } 
   #more {
     display:none;
+  }
+  .main-counter {
+    padding: 0;
+    margin-top:7px;
+    text-align: start;
+    display:block;
+    max-width:118px;
+    border-radius: 50%;
+  }
+  .counter {
+    width: 60px;  
+    text-align: center;
+    border-style: none;
+  }
+  .up_count {
+    margin-bottom: 10px;  
+    margin-left: -4px;
+    border-style: none;
+    padding: 0;
+    box-shadow:none;
+    i {
+      margin:7px;
+      font-size: 10px;
+      padding: 0;
+    }
+  } 
+  .down_count {
+    margin-bottom: 10px;  
+    margin-right: -4px;
+    border-right:none;
+    border-radius:30%;
+    padding:0;
+    border-style: none;
+    box-shadow:none;
+    i {
+      margin:7px;
+      font-size: 10px;
+      padding: 0;
+    }
+  
+  }
+  .add-to-cart-btn {
+    text-align: start;
+    display: block;
+    margin-left: 10px;
+    background-color: $color-text-green!important;
+    border-radius: 30px;
+    color:#ffffff;
+    padding:12px 45px;
+    text-transform: uppercase;
   }
 /* ====================================================
   MEDIA QUERIES
