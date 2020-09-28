@@ -138,9 +138,12 @@
     <section class="product-cards-section">
       <img id="product-main-image" src="img/product-gallery-image-1.png" alt="product-gallery-image-1">
       <div class="thumbnail-cards">
-        <img class="thumbnail mr-2 active" src="img/product-gallery-image-1.png" alt="product-gallery-image-1">
-        <img class="thumbnail mr-2" src="img/product-7.png" alt="product-gallery-image-1">
-        <img class="thumbnail" src="img/product-gallery-image-1.png" alt="product-gallery-image-1">
+        <div class="small-images">
+          <img class="thumbnail mr-xs-2 active" src="img/product-gallery-image-1.png" alt="product-gallery-image-1">
+          <img class="thumbnail mr-xs-2" src="img/product-gallery-image-2.jpg" alt="product-gallery-image-1">
+          <img class="thumbnail" src="img/product-gallery-image-3.jpg" alt="product-gallery-image-1">
+          <img class="thumbnail d-none d-md-block" src="img/product-gallery-image-4.jpg" alt="product-gallery-image-1">
+        </div>
         <div class="products-details">
           <p>$299.99</p>
           <select name="product-colors" id="product-colors">
@@ -169,12 +172,68 @@
             <a href="https://ro.pinterest.com/"><i class="fa fa-pinterest-p"></i></a>
           </div>
         </div>
-      </div>  
+        <div class="tab-section d-none d-md-block">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+                aria-selected="true">Description</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+                aria-selected="false">Additional Information</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
+                aria-selected="false">Reviews</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+              <p class="px-4">Raw denim you
+                probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master
+                cleanse. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum veritatis molestiae dicta laboriosam consectetur blanditiis earum, mollitia, fuga sapiente, modi 
+                consequuntur architecto ea ad velit tempore harum ducimus quas voluptatem. 
+              </p>
+              <p class="px-4">Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro
+                  keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip
+                  placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi
+                  qui.
+              </p>
+            </div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+              <p>Raw denim you
+                probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master
+                cleanse. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum veritatis molestiae dicta laboriosam consectetur blanditiis earum, mollitia, fuga sapiente, modi 
+                consequuntur architecto ea ad velit tempore harum ducimus quas voluptatem. 
+              </p>
+              <p class="px-4">Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro
+                keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip
+                placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi
+                qui.
+            </p>
+            </div>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab"> 
+              <p class="px-4">Raw denim you
+                probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master
+                cleanse. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum veritatis molestiae dicta laboriosam consectetur blanditiis earum, mollitia, fuga sapiente, modi 
+                consequuntur architecto ea ad velit tempore harum ducimus quas voluptatem. 
+              </p>
+              <p class="px-4">Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro
+                  keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip
+                  placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi
+                  qui.
+              </p>
+          </div>
+          </div>
+        </div>
+      </div> 
+     
     </section>
+    
     <!------------------------------------------Products  Section------------------------------------------------->
-    <section class="products-section">
+    <section class="products-section" style="min-height:500px">
       <div class="wrapper">
-        <h1>Popular Items</h1>
+        <h1 class="bigger-display">Popular Items</h1>
         <div class="products-desktop">
           <div class="row card-columns">
             <div class="card col-sm">
@@ -188,8 +247,7 @@
               <img class="card-img-top" src="img/product-2.png" alt="product-2">
               <div class="card-body">
                 <p class="card-title">Hay About A Lounge Chair AAL 93</p>
-                <button class="btn mr-0" id="special-button-1">659.55$</button>
-                <button class=" btn font-weight-bold ml-0" id="special-button-2" >Buy Now</button>
+                <span class="card-text font-weight-bold">$ 299.99</span>
               </div>
             </div>
             <div class="card col-sm">
@@ -211,39 +269,7 @@
               </div>
             </div>
           </div>
-          <div class="row card-columns">
-            <div class="card col-sm">
-              <img class="card-img-top" src="img/product-5.png" alt="product-5">
-              <div class="card-body">
-                <p class="card-title">Kristina Dam Oak Table With White Marble</p>
-                <span class="card-text font-weight-bold">$ 799.55</span>
-              </div>
-            </div>
-            <div class="card col-sm">
-              <img class="card-img-top" src="img/product-6.png" alt="product-6">
-              <div class="card-body">
-                <p class="card-title">Hay About A Lounge Chair AAL 93</p>
-                <span class="card-text font-weight-bold">$ 659.55</span>
-              </div>
-            </div>
-            <div class="card col-sm">
-              <img class="card-img-top" src="img/product-7.png" alt="product-7">
-              <div class="card-body">
-                <p class="card-title">Activate Facial Mask</p>
-                <span class="card-text font-weight-bold">$ 129.55</span>
-              </div>
-            </div>
-            <div class="col-sm card-special">
-              <img src="img/product-8.png" alt="product-7" style="width:100%;margin-top:40px;">
-              <div class="overlay-special">
-                <p>My dragons are misbehaving again. Unbelivable</p>
-                <img src="img\special-card-image.png" alt="special-cards">
-                <span>5h Ago</span>
-              </div>
-            </div>
-          </div>
         </div>
-        <button type="button" class="btn btn-lg btn-load-more">Load More</button>
     <!------------------------------------------Products  Section  Mobile------------------------------------------------->
         <div
           id="carousel-example-2z"
@@ -330,7 +356,7 @@
         <!--/.Carousel Wrapper-->
       </div>
     </section>
-    <button class="scroll-top text-white mx-auto px-3 py-2">Scroll to top</button>
+    <button class="scroll-top text-white mx-auto px-3 py-2 d-md-none">Scroll to top</button>
   </div>
 
   <!------------------------------------------Benefits Content  Section------------------------------------------------->

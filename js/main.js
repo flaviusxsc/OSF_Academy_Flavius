@@ -27,34 +27,10 @@ addheart.addEventListener ('click', function(){
 integerheart += 1;
 intheart.innerHTML = integerheart;
 }) 
-// Cookie Policy 
 
-// const cookieContainer = document.querySelector(".cookie-container");
-// const cookieButton = document.querySelector(".cookie-btn");
 
-// cookieButton.addEventListener("click",() => {
-//   cookieContainer.classList.remove("active");
-//   localStorage.setItem("cookieBannerDisplayed","true")
-// });
 
-// setTimeout( () =>{
-//   if(!localStorage.getItem("cookieBannerDisplayed"))
-//   cookieContainer.classList.add("active")
-// }, 2000)
-
-// Shopping increment by Buy Button
-let addspecial = document.getElementById('special-button-2');
-
-let intcart = document.getElementById('number-bag');
-
-let integerspecial = 0;
-
-addspecial.addEventListener ('click', function(){
-integerspecial += 1;
-intcart.innerHTML = integerspecial;
-}) ;
-
-// Thumbnails cards  - nu merge
+// Thumbnails cards  
  let thumbnails = document.getElementsByClassName('thumbnail');
 
  let activeImages = document.getElementsByClassName('active');
@@ -117,3 +93,30 @@ $(document).ready(function(){
       $(this).focus().select();
   });
 });
+
+// Shopping increment by Buy Button
+let addspecial = document.getElementById('special-button-2');
+
+let intcart = document.getElementById('number-bag');
+
+let integerspecial = 0;
+
+addspecial.addEventListener ('click', function(){
+integerspecial += 1;
+intcart.innerHTML = integerspecial;
+}) ;
+
+//Cookie Policy 
+
+const cookieContainer = document.querySelector(".cookie-container");
+const cookieButton = document.querySelector(".cookie-btn");
+
+cookieButton.addEventListener("click",() => {
+  cookieContainer.classList.remove("active");
+  localStorage.setItem("cookieBannerDisplayed","true")
+});
+
+setTimeout( () =>{
+  if(!localStorage.getItem("cookieBannerDisplayed"))
+  cookieContainer.classList.add("active")
+}, 2000);

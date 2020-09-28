@@ -1213,7 +1213,58 @@ i {
     border-radius: 60px;
     margin: 120px auto 77px auto; }
   .more-cards {
-    width: 1169px; } }
+    width: 1169px; }
+  /* ====================================================
+             PRODUCTS PAGE
+  ======================================================= */
+  .product-cards-section {
+    display: grid;
+    grid-template-columns: 52% 48%;
+    grid-template-rows: 100%;
+    background-color: #ffffff;
+    position: relative; }
+    .product-cards-section .tab-section {
+      position: absolute;
+      bottom: 0;
+      left: 0; }
+    .product-cards-section #product-main-image {
+      width: 100%;
+      padding-right: 20px;
+      padding-left: 20px;
+      padding-top: 20px;
+      padding-bottom: 360px; }
+    .product-cards-section .thumbnail-cards {
+      display: flex;
+      flex-direction: row;
+      margin-right: 30px; }
+      .product-cards-section .thumbnail-cards .tab-section .tab-content {
+        background-color: #262a32;
+        color: #ffffff; }
+        .product-cards-section .thumbnail-cards .tab-section .tab-content .tab-pane {
+          font-size: 20px;
+          padding: 50px;
+          line-height: 24px; }
+      .product-cards-section .thumbnail-cards .tab-section ul {
+        margin-left: 14%; }
+      .product-cards-section .thumbnail-cards .tab-section li a {
+        color: #bdc3c7;
+        font-size: 26px;
+        padding: 20px;
+        border-style: none;
+        border-radius: 25px 25px 0 0; }
+        .product-cards-section .thumbnail-cards .tab-section li a:focus {
+          background-color: #262a32;
+          color: #ffffff; }
+      .product-cards-section .thumbnail-cards .small-images {
+        margin-right: 40px; }
+        .product-cards-section .thumbnail-cards .small-images .thumbnail {
+          margin-bottom: 10px; }
+  .products-details .social-media a i {
+    font-size: 22px; }
+  .products-details .read-more p {
+    font-size: 21px; }
+  .bigger-display {
+    font-size: 32px !important; } }
 
 @media (max-width: 768px) {
   /* ------------NAVBAR------------------*/
@@ -1271,7 +1322,7 @@ i {
   .cookie-container {
     display: none; } }
 
-@media (min-device-width: 769px) and (max-device-width: 1279px) {
+@media (min-device-width: 769px) and (max-device-width: 1280px) {
   /* ------------NAVBAR------------------*/
   .abs-center-x {
     position: static;
@@ -1526,4 +1577,60 @@ i {
   .more-cards {
     width: 1169px; }
   .category-container .product-cards-section {
-    width: 85% !important; } }
+    width: 85% !important; }
+  /* ====================================================
+             PRODUCTS PAGE
+  ======================================================= */
+  .products-page-container {
+    width: 100%; }
+  .product-cards-section {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 100%;
+    background-color: #ffffff;
+    position: relative; }
+    .product-cards-section .tab-section {
+      position: absolute;
+      bottom: 0;
+      left: 0; }
+    .product-cards-section #product-main-image {
+      width: 100%;
+      padding-right: 20px;
+      padding-left: 20px;
+      padding-top: 20px;
+      padding-bottom: 400px; }
+    .product-cards-section .thumbnail-cards {
+      display: flex;
+      flex-direction: row;
+      margin-right: 30px; }
+      .product-cards-section .thumbnail-cards .tab-section .tab-content {
+        background-color: #262a32;
+        color: #ffffff; }
+        .product-cards-section .thumbnail-cards .tab-section .tab-content .tab-pane {
+          font-size: 20px;
+          padding: 50px;
+          line-height: 24px;
+          padding-right: 150px; }
+      .product-cards-section .thumbnail-cards .tab-section ul {
+        margin-left: 14%; }
+      .product-cards-section .thumbnail-cards .tab-section li a {
+        color: #bdc3c7;
+        font-size: 26px;
+        padding: 20px;
+        border-style: none;
+        border-radius: 25px 25px 0 0; }
+        .product-cards-section .thumbnail-cards .tab-section li a:focus {
+          background-color: #262a32;
+          color: #ffffff; }
+      .product-cards-section .thumbnail-cards .small-images {
+        margin-right: 40px; }
+        .product-cards-section .thumbnail-cards .small-images .thumbnail {
+          margin-bottom: 10px; }
+  .products-details .social-media {
+    display: none; }
+  .products-details .read-more p {
+    font-size: 21px;
+    padding-right: 150px;
+    padding-top: 0; }
+  .bigger-display {
+    font-size: 32px !important; } }
