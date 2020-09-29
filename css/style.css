@@ -1121,8 +1121,6 @@ i {
     min-height: 198px; }
   .method {
     flex-direction: row; }
-  .text-content p {
-    padding: 5px 300px 0 0; }
   /* ------------Banner------------------*/
   .banner-section img {
     height: 445px; }
