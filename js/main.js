@@ -1,3 +1,18 @@
+//Cookie Policy 
+
+const cookieContainer = document.querySelector(".cookie-container");
+const cookieButton = document.querySelector(".cookie-btn");
+
+cookieButton.addEventListener("click",() => {
+  cookieContainer.classList.remove("active");
+  localStorage.setItem("cookieBannerDisplayed","true")
+});
+
+setTimeout( () =>{
+  if(!localStorage.getItem("cookieBannerDisplayed"))
+  cookieContainer.classList.add("active")
+}, 2000);
+
 // Get the year
 var date = new Date();
 document.getElementById("year").innerHTML = date.getFullYear();
@@ -76,6 +91,7 @@ function showPassword() {
   }
 } 
 
+
 // Counter products-page 
 $(document).ready(function(){
   $('button').click(function(e){
@@ -106,17 +122,18 @@ integerspecial += 1;
 intcart.innerHTML = integerspecial;
 }) ;
 
-//Cookie Policy 
+// Loading Cards Ajax request home page {not done}
 
-const cookieContainer = document.querySelector(".cookie-container");
-const cookieButton = document.querySelector(".cookie-btn");
+var ajax = new XMLHttpRequest();
 
-cookieButton.addEventListener("click",() => {
-  cookieContainer.classList.remove("active");
-  localStorage.setItem("cookieBannerDisplayed","true")
-});
+ajax.onreadystatechange = function () {
+if(ajax.readyState === 4) {
+document.getElementById('ajax').innerHTML = ajax.responseText;
+  }
+};
 
-setTimeout( () =>{
-  if(!localStorage.getItem("cookieBannerDisplayed"))
-  cookieContainer.classList.add("active")
-}, 2000);
+ajax.open('GET','ajax.html')
+function sendAJAX(){
+  ajax.send();
+  document.getElementById('load').style.display = "none";
+}
