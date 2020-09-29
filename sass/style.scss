@@ -270,6 +270,7 @@ body {
     position: relative;
     width: 80%;
     margin: 0 auto;
+
   }
   hr {
     background-color: white;
@@ -777,10 +778,11 @@ transform: translate(-50%,-50%);
   }
 }
 .body-404 {
-  width: 100%;
+  width: 70%;
   height: 492px;
   padding: 50px;
   background-color: #ffffff;
+  margin:auto;
   img {
     position: absolute;
   }
@@ -960,6 +962,7 @@ transform: translate(-50%,-50%);
   .products-page-container {
     background-color: #f2edea;
     height:auto;
+    padding-bottom: 35px;
 
     .products-section {
       background-color:#f2edea ;
@@ -1089,7 +1092,7 @@ transform: translate(-50%,-50%);
     border-radius: 30px; 
     display:block;
     border: 2px solid #d9d9d9 !important;
-    margin-top: 80px;
+    margin-top: 20px;
   } 
   #more {
     display:none;
@@ -1161,7 +1164,10 @@ transform: translate(-50%,-50%);
      }
    }
    .products-section {
-     min-height:1600px;
+     height:100%;
+     .wrapper {
+       padding-bottom:70px;
+     }
      h1 {
        font-size:32px;
      }
@@ -1201,7 +1207,8 @@ transform: translate(-50%,-50%);
   }
   .nav-item a {
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 400 !important;
+    color: #45413e;
     text-transform: uppercase;
     font-family: $font-primary;
   }
@@ -1211,18 +1218,20 @@ transform: translate(-50%,-50%);
   #language {
     color: #45413e;
     font-family: $font-primary;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     text-transform: uppercase;
     border: none;
+    opacity: 0.5;
   }
   #currency {
     color: #45413e;
     font-family: $font-primary;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     text-transform: uppercase;
     border: none;
+    opacity: 0.5;
   }
   .footer-bottom {
     display: none;
@@ -1326,6 +1335,10 @@ transform: translate(-50%,-50%);
   }
   .method {
     flex-direction: row;
+    
+  }
+  .text-content p {
+    padding: 5px 300px 0 0;
   }
   /* ------------Banner------------------*/
   .banner-section img {
@@ -1384,6 +1397,22 @@ transform: translate(-50%,-50%);
   .carousel-item-next, .carousel-item-prev, .carousel-item.active {
   display:flex;
 }
+/* ====================================================
+                        404  Error PAGE
+  ======================================================= */
+  .text-error p {
+  padding-right: 230px;
+  line-height: 25px;
+  }
+  .search-bottom form {
+  width:70%;
+  } 
+  .search-404 {
+    position: absolute;
+    right:0;
+    transform: translate(-50%, -50%);
+    top: 30%;
+  }
 /* ====================================================
               CATEGORY LANDING PAGE
   ======================================================= */
@@ -1775,8 +1804,10 @@ display: none;
 .benefits-content-section {
  display: flex;
  min-height: 198px;
+ 
  .text-content {
    margin-top:25px;
+   
  }
 }
 .method {

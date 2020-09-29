@@ -122,7 +122,7 @@ integerspecial += 1;
 intcart.innerHTML = integerspecial;
 }) ;
 
-// Loading Cards Ajax request home page {not done}
+// Loading Cards Ajax request home page  desktop page
 
 var ajax = new XMLHttpRequest();
 
