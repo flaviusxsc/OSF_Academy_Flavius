@@ -1102,7 +1102,7 @@ transform: translate(-50%,-50%);
     margin-top:7px;
     text-align: start;
     display:block;
-    max-width:118px;
+    // max-width:100px;
     border-radius: 50%;
   }
   .counter {
@@ -1162,6 +1162,9 @@ transform: translate(-50%,-50%);
      .card-body {
        text-align: center;
      }
+   }
+   .carousel-control-next{
+     right:30%;
    }
    .products-section {
      height:100%;
@@ -1325,6 +1328,10 @@ transform: translate(-50%,-50%);
       padding-top: 79px;
       line-height: 50px;
     }
+    p {
+      width:70%;
+      margin-left: 50px;
+    }
   }
   /* ------------/*CAROUSEL------------------*/
 
@@ -1338,7 +1345,8 @@ transform: translate(-50%,-50%);
     
   }
   .text-content p {
-    // padding: 5px 300px 0 0;
+    //  padding: 5px 300px 0 0;
+    
   }
   /* ------------Banner------------------*/
   .banner-section img {
@@ -1411,7 +1419,7 @@ transform: translate(-50%,-50%);
     position: absolute;
     right:0;
     transform: translate(-50%, -50%);
-    top: 30%;
+    top: 25%;
   }
 /* ====================================================
               CATEGORY LANDING PAGE
@@ -1492,7 +1500,7 @@ transform: translate(-50%,-50%);
     display:grid;
     grid-template-columns: 52% 48% ;
     grid-template-rows: 100%;
-    background-color: #ffffff;
+    background-color: #f2edea;
     position:relative;
     .tab-section{
       position:absolute; 

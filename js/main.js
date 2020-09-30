@@ -1,3 +1,5 @@
+
+
 //Cookie Policy 
 
 const cookieContainer = document.querySelector(".cookie-container");
@@ -137,3 +139,15 @@ function sendAJAX(){
   ajax.send();
   document.getElementById('load').style.display = "none";
 }
+
+// Add to Cart button to Wish List
+let addcart = document.getElementById('add-cart-btn');
+
+let intcartnumber = document.getElementById('number-bag');
+
+let integerspecialcart = 0;
+
+addcart.addEventListener ('click', function(){
+integerspecialcart += 1;
+intcartnumber.innerHTML = integerspecialcart;
+}) ;

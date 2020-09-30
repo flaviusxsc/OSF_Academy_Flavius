@@ -931,7 +931,6 @@ i {
   margin-top: 7px;
   text-align: start;
   display: block;
-  max-width: 118px;
   border-radius: 50%; }
 
 .counter {
@@ -985,6 +984,8 @@ i {
     margin: 40px auto; }
     .products-desktop .row .card .card-body {
       text-align: center; }
+  .carousel-control-next {
+    right: 30%; }
   .products-section {
     height: 100%; }
     .products-section .wrapper {
@@ -1114,6 +1115,9 @@ i {
       padding-left: 60px;
       padding-top: 79px;
       line-height: 50px; }
+    .text-image p {
+      width: 70%;
+      margin-left: 50px; }
   /* ------------/*CAROUSEL------------------*/
   /* ------------Benefits Section------------------*/
   .benefits-content-section {
@@ -1182,7 +1186,7 @@ i {
     position: absolute;
     right: 0;
     transform: translate(-50%, -50%);
-    top: 30%; }
+    top: 25%; }
   /* ====================================================
               CATEGORY LANDING PAGE
   ======================================================= */
@@ -1244,7 +1248,7 @@ i {
     display: grid;
     grid-template-columns: 52% 48%;
     grid-template-rows: 100%;
-    background-color: #ffffff;
+    background-color: #f2edea;
     position: relative; }
     .product-cards-section .tab-section {
       position: absolute;
