@@ -1347,14 +1347,14 @@ i {
       height: 450px;
       width: 100%; }
   .cookie-container {
-    width: 90%;
+    width: 70%;
     display: flex;
     flex-direction: column;
-    height: 250px;
+    height: 260px;
     margin: 0 auto;
     padding: 0; }
     .cookie-container p {
-      font-size: 12px;
+      font-size: 10px;
       padding: 4px;
       width: 90%;
       margin: 0 auto; }
@@ -1363,7 +1363,7 @@ i {
       width: 50%;
       margin: auto auto; }
     .cookie-container h2 {
-      margin: 0 auto;
+      margin: 10px auto;
       width: 70%; } }
 
 @media (min-device-width: 769px) and (max-device-width: 1280px) {
