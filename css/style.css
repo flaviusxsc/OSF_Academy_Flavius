@@ -685,7 +685,7 @@ i {
   .text-error p {
     margin: 30px 0; }
   .text-error :first-child {
-    font-size: 32px;
+    font-size: 26px;
     font-weight: 800;
     color: #000; }
 
@@ -695,7 +695,7 @@ i {
 
 .search-404 {
   position: absolute;
-  left: 90%; }
+  left: 0; }
 
 .oops-text {
   color: #84bc22;
@@ -1347,7 +1347,24 @@ i {
       height: 450px;
       width: 100%; }
   .cookie-container {
-    display: none; } }
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    margin: 0 auto;
+    padding: 0; }
+    .cookie-container p {
+      font-size: 12px;
+      padding: 4px;
+      width: 90%;
+      margin: 0 auto; }
+    .cookie-container button {
+      margin-top: 30px;
+      width: 50%;
+      margin: auto auto; }
+    .cookie-container h2 {
+      margin: 0 auto;
+      width: 70%; } }
 
 @media (min-device-width: 769px) and (max-device-width: 1280px) {
   /* ------------NAVBAR------------------*/
