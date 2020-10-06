@@ -216,7 +216,7 @@ body {
 /* ----Slider Section----*/
 .slider-section {
   position: relative;
-  width: 80%;
+  width: 1138px;
   margin: 22px auto;
 }
 
@@ -789,7 +789,7 @@ transform: translate(-50%,-50%);
 }
 .text-error {
   text-align: right;
-  width: 62%;
+  width: 60%;
   float: right;
   text-align: left;
   p {
@@ -1417,9 +1417,22 @@ transform: translate(-50%,-50%);
   } 
   .search-404 {
     position: absolute;
-    right:0;
+    left:85%;
     transform: translate(-50%, -50%);
-    top: 25%;
+    top: 20%;
+  }
+  .body-404  {
+    padding:0;
+    .text-error {
+      padding:12px 10px;
+      margin-left:30px ;
+      p {
+        margin:12px 0;
+      }
+    
+    }
+   
+
   }
 /* ====================================================
               CATEGORY LANDING PAGE
